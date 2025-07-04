@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Design Handbook Locator</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; padding: 20px; background: #f5f5f5; color: #333; }
+        .container {
+            background: #fff;
+            max-width: 900px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 { /* New style for the top-level heading */
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 10px; /* Reduced margin to bring it closer to the sub-heading */
+            font-size: 3em; /* Big font size as requested */
+            font-weight: bold;
+        }
+        h2 {
+            color: #0056b3;
+            text-align: center;
+            margin-top: 0; /* Remove top margin as h1 is above it */
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        select, button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #333;
+        }
+        select:focus, input:focus, button:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+            outline: none;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #218838;
+            transform: translateY(-1px);
+        }
+        .output {
+            margin-top: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            background-color: #fcfcfc;
+            line-height: 1.6;
+            color: #444;
+        }
+        .output h3 {
+            margin-top: 0;
+            color: #007bff;
+            font-size: 1.4em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .output p, .output ul {
+            margin-bottom: 10px;
+        }
+        .output ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            padding-left: 0;
+        }
+        .output ul li {
+            margin-bottom: 5px;
+        }
+        .output strong {
+            color: #000;
+        }
+        .info-box {
+            background-color: #eaf6ff;
+            border: 1px solid #cce5ff;
+            border-left: 5px solid #007bff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 25px; /* Added margin-bottom for spacing */
+            font-style: italic;
+            color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Added a new h1 tag for the main title -->
+        <h1>Data Handbook Locator</h1>
+        <!-- Modified the existing h2 tag to be a sub-heading -->
+        <h2>Mechanical Engineering Design Handbook</h2>
+
+        <div class="info-box">
+            This tool helps you locate specific concepts, formulas, and tables within the "Design Data Handbook for Mechanical Engineers in SI and Metric Units" by K. Mahadevan and K. Balaveera Reddy (Due to available source there is variation in page no , so please consider this point).
+        </div>
+
+        <label for="searchConcept">Select a Concept, Component, or Term:</label>
+        <select id="searchConcept">
+            <option value="">-- Select a Topic/Term --</option>
+            <optgroup label="I. Stress Analysis">
+                <option value="simple_stresses_strains">Simple Stresses and Strains</option>
+                <option value="combined_stresses">Combined Stresses</option>
+                <option value="compound_stresses">Compound Stresses</option>
+                <option value="superposition_eccentric_loading">Superposition (Eccentric Loading)</option>
+                <option value="stresses_in_terms_of_strains">Stresses in Terms of Strains</option>
+                <option value="hertz_contact_stresses">Hertz Contact Stresses</option>
+                <option value="thermal_stresses">Thermal Stresses</option>
+                <option value="columns_stress_analysis">Columns (Stress Analysis)</option>
+                <option value="material_properties_stress_analysis">Material Properties (Stress Analysis)</option>
+                <option value="cross_sections_properties">Properties of Various Cross-Sections</option>
+                <option value="beam_formulas">Shear, Moment and Deflection Formulas for Beams</option>
+            </optgroup>
+            <optgroup label="II. Working Stresses">
+                <option value="stress_concentration_working">Stress Concentration</option>
+                <option value="theories_of_failure">Theories of Failure</option>
+                <option value="design_for_strength_size">Design for Strength (Influence of Size)</option>
+                <option value="static_loads_working">Static Loads (Working Stresses)</option>
+                <option value="design_for_fatigue">Design for Fatigue</option>
+                <option value="equivalent_stresses">Equivalent Stresses</option>
+                <option value="inertia_centrifugal_loads">Inertia Stresses and Centrifugal Loads</option>
+                <option value="resilience_working">Resilience (Working Stresses)</option>
+                <option value="stress_concentration_factors_tables">Stress Concentration Factors Tables</option>
+                <option value="surface_condition_size_factors">Surface Condition and Size Factors</option>
+                <option value="sensitivity_index">Sensitivity Index (q)</option>
+                <option value="reliability_factor">Reliability Factor (R)</option>
+                <option value="modulus_of_resilience_unit_volume">Modulus of Resilience per unit volume</option>
+                <option value="permissible_shear_stress_springs">Permissible Shear Stress (Compression Springs)</option>
+                <option value="fatigue_strength_diagram">Fatigue Strength Diagram</option>
+            </optgroup>
+            <optgroup label="III. Design of Shafts">
+                <option value="torsion_circular_shafts">Torsion of Circular Shafts</option>
+                <option value="hollow_shafts">Hollow Shafts Design</option>
+                <option value="asme_shaft_design">ASME Code for Design of Transmission Shafting</option>
+                <option value="axial_load_shafts">Axial Load in addition to Torsion/Bending (Shafts)</option>
+                <option value="effect_of_keyways_shafts">Effect of Keyways (Shafts)</option>
+                <option value="crank_shafts">Crank Shafts</option>
+                <option value="torsion_rectangular_bars">Torsion of Rectangular Bars</option>
+                <option value="properties_shafting_materials">Properties of Shafting Materials</option>
+                <option value="allowable_bearing_pressure">Allowable Bearing Pressure</option>
+                <option value="constant_torsion_rectangular_bars">Constant for Torsion of Rectangular Bars</option>
+                <option value="coefficient_a_abs_formula">Coefficient 'a' in American Bureau of Shipping Formula</option>
+                <option value="diagrams_shafting_systems">Diagrams of Shafting Systems</option>
+            </optgroup>
+            <optgroup label="IV. Keys, Pins, Cotter and Knuckle Joints">
+                <option value="square_rectangular_keys">Square and Rectangular Keys</option>
+                <option value="taper_keys">Taper Keys</option>
+                <option value="feather_keys">Feather Keys</option>
+                <option value="round_taper_pins">Round Taper Pins</option>
+                <option value="splines">Splines (Parallel Side and Involute)</option>
+                <option value="cotter_joint">Cotter Joint</option>
+                <option value="knuckle_joint">Knuckle Joint</option>
+                <option value="key_dimensions_tolerances">Key Dimensions and Tolerances</option>
+            </optgroup>
+            <optgroup label="V. Riveted Joints">
+                <option value="types_riveted_joints">Types of Riveted Joints</option>
+                <option value="thickness_shell_cover_plates">Thickness of Shell and Cover Plates</option>
+                <option value="strength_riveted_joints">Strength of Riveted Joints</option>
+                <option value="efficiency_riveted_joints">Efficiency of Riveted Joints</option>
+                <option value="empirical_rivet_diameter">Empirical Formula for Diameter of Rivet Hole</option>
+                <option value="pitch_riveted_joints">Pitch (Riveted Joints)</option>
+                <option value="eccentric_loads_riveted">Eccentric Loads on Structural Connections (Riveted)</option>
+                <option value="commercial_boiler_efficiency">Commercial Boiler Joints Efficiency</option>
+                <option value="recommended_joint_types">Recommended Types of Joints (Riveted)</option>
+                <option value="minimum_thickness_boiler_plates">Minimum Thickness of Boiler Plates</option>
+                <option value="nominal_diameters_rivets">Nominal Diameters of Rivets</option>
+                <option value="coefficients_k1_rivets">Coefficients k1 for Equation 5.12(b)</option>
+                <option value="recommended_rivet_values">Recommended Values for Rivet Hole Diameter, Pitch, and Efficiency</option>
+                <option value="allowable_stress_structural_joints">Allowable Stress for Structural Joints (Riveted)</option>
+                <option value="working_stress_elevated_temp_rivets">Working Stress at Elevated Temperatures (Rivets)</option>
+            </optgroup>
+            <optgroup label="VI. Welded Joints">
+                <option value="types_welded_joints">Types of Welded Joints</option>
+                <option value="stresses_in_welds">Stresses in Welds</option>
+                <option value="eccentric_loads_welded">Eccentric Loads (Welded)</option>
+                <option value="properties_weld_metal">Properties of Deposited Weld Metal</option>
+                <option value="stress_concentration_welds">Stress Concentration Factors (Welds)</option>
+                <option value="recommended_design_stresses_welds">Recommended Design Stresses (Welds)</option>
+                <option value="strength_shield_arc_welds">Strength of Shield Arc Steel Welds</option>
+                <option value="allowable_loads_welds">Allowable Loads on Mild Steel Fillet/Butt Welds</option>
+                <option value="section_modulus_polar_inertia_welds">Section Modulus & Polar Moment of Inertia (Welds)</option>
+            </optgroup>
+            <optgroup label="VII. Cylinders, Pipes and Tubes">
+                <option value="thin_cylinders">Thin Cylinders</option>
+                <option value="long_thin_tubes_internal_pressure">Long Thin Tubes with Internal Pressure</option>
+                <option value="engine_press_cylinders">Engine and Press Cylinders</option>
+                <option value="openings_cylindrical_drums">Openings in Cylindrical Drums</option>
+                <option value="thin_tubes_external_pressure">Thin Tubes with External Pressure</option>
+                <option value="critical_pressure_large_cylinder">Critical Pressure for Large Cylinder</option>
+                <option value="moment_inertia_stiffening_ring">Moment of Inertia of Stiffening Ring</option>
+                <option value="thick_cylinders_lames">Thick Cylinders (Lame's Equations)</option>
+                <option value="cylinder_wall_thickness_materials">Cylinder Wall Thickness (Brittle/Ductile Materials)</option>
+                <option value="clavarino_birnie_equations">Clavarino's and Birnie's Equations</option>
+                <option value="barlows_equations">Barlow's Equations</option>
+                <option value="changes_cylinder_diameter">Changes in Cylinder Diameter Due to Pressure</option>
+                <option value="compound_cylinders">Compound Cylinders</option>
+                <option value="press_shrink_fits">Press and Shrink Fits</option>
+                <option value="forces_interference_fits">Forces Resulting in Interference Fits</option>
+                <option value="stress_force_shrink_fits">Stress Due to Force and Shrink Fits</option>
+                <option value="allowable_stress_cylinders_pipes">Allowable Stress Values (Cylinders/Pipes)</option>
+                <option value="values_e_cylinders_pipes">Values of E (Cylinders/Pipes)</option>
+            </optgroup>
+            <optgroup label="VIII. Shells, Flat Plates and Cylinder Heads">
+                <option value="shells_internal_pressure">Shells Subjected to Internal Pressure</option>
+                <option value="shells_external_pressure">Shells Subjected to External Pressure</option>
+                <option value="unstayed_flat_heads_covers">Unstayed Flat Heads and Covers</option>
+                <option value="stayed_braced_plates">Stayed and Braced Plates</option>
+                <option value="circular_plate_uniformly_loaded">Circular Plate Uniformly Loaded</option>
+                <option value="circular_plate_centrally_loaded">Circular Plate Loaded Centrally</option>
+                <option value="grashofs_formula">Grashof's Formula for Thickness of a Plate</option>
+                <option value="rectangular_plates">Rectangular Plates</option>
+                <option value="elliptical_plates">Elliptical Plates</option>
+                <option value="values_d_c_flat_heads">Values of 'D' and 'C' for Typical Unstayed Flat Heads</option>
+                <option value="pressure_vessel_classification">Classification of Pressure Vessels and Weld Joint Efficiency Factor (J)</option>
+                <option value="allowable_stress_shells_plates">Allowable Stress Values (Shells/Plates)</option>
+                <option value="values_e_shells_plates">Values of E (Shells/Plates)</option>
+                <option value="coefficients_c_plates">Coefficients c1, c2, c3, c4, c5 for Plates</option>
+                <option value="max_allowable_stresses_stays">Maximum Allowable Stresses in Stays and Stay Bolts</option>
+                <option value="max_stresses_deflection_flat_plates">Maximum Stresses and Deflection in Flat Plates</option>
+                <option value="plates_different_loads">Plates Subjected to Different Types of Loads</option>
+            </optgroup>
+            <optgroup label="IX. Threaded Fasteners and Power Screws">
+                <option value="set_screws">Set Screws</option>
+                <option value="bolts_threaded">Bolts (Threaded Fasteners)</option>
+                <option value="stresses_tension_bolts">Stresses in Tension Bolts</option>
+                <option value="allowable_stress_fluid_tight_joints">Allowable Stress for Fluid Tight Joints</option>
+                <option value="unstressed_bolt">Unstressed Bolt</option>
+                <option value="joint_axial_load_tightening">Joint with Axial Load with Subsequent Tightening</option>
+                <option value="number_of_bolts">Number of Bolts</option>
+                <option value="eccentric_loading_rectangular_base">Eccentric Loading on Rectangular Base</option>
+                <option value="eccentric_loading_circular_base">Eccentric Loading on Circular Base</option>
+                <option value="eccentric_loading_rectangular_plates">Eccentric Loading on Rectangular Plates</option>
+                <option value="efficiency_triangular_threads">Efficiency of Triangular Threads</option>
+                <option value="tangential_force_v_thread">Tangential Force for V-Thread</option>
+                <option value="efficiency_v_thread">Efficiency of V-Thread</option>
+                <option value="power_screws_square_threads">Power Screws (Square Threads)</option>
+                <option value="efficiency_formula_square_thread">Efficiency Formula for Square Thread</option>
+                <option value="number_threads_length_nut">Number of Threads and Length of Nut</option>
+                <option value="basic_iso_metric_threads">Basic Dimensions of ISO Metric Screw Threads</option>
+                <option value="basic_dimensions_square_threads">Basic Dimensions for Square Threads</option>
+                <option value="limits_sizes_threads">Limits of Sizes for Fine and Coarse Series Nut/Bolt Threads</option>
+            </optgroup>
+            <optgroup label="X. Curved Beams">
+                <option value="stress_analysis_curved_beams">Stress Analysis in Curved Beams</option>
+                <option value="chain_links">Chain Links</option>
+                <option value="closed_rings">Closed Rings</option>
+                <option value="formulas_curved_beams">Formulas for Curved Beams</option>
+                <option value="effect_curvature_bending_stresses">Effect of Curvature on Bending Stresses</option>
+            </optgroup>
+            <optgroup label="XI. Springs">
+                <option value="types_of_springs">Types of Springs</option>
+                <option value="cylindrical_compression_springs">Cylindrical Compression Springs (Round Section)</option>
+                <option value="rectangular_section_springs">Rectangular Section Springs</option>
+                <option value="repeated_loading_springs">Repeated Loading (Springs)</option>
+                <option value="minimum_free_length_spring">Minimum Free Length of Spring</option>
+                <option value="resistance_to_buckling_springs">Resistance to Buckling (Springs)</option>
+                <option value="concentric_compression_springs">Concentric Compression Springs</option>
+                <option value="permissible_shear_stress_spring_graph">Permissible Shear Stress (Springs - Graphical)</option>
+                <option value="vibration_cylindrical_springs">Vibration of Cylindrical Springs</option>
+                <option value="conical_springs">Conical Springs</option>
+                <option value="torsion_springs">Torsion Springs</option>
+                <option value="leaf_springs">Leaf Springs (Flat and Multi-Leaf)</option>
+                <option value="laminated_springs">Laminated Cantilever and Semi-Elliptic Springs</option>
+                <option value="disc_springs">Disc Springs or Belleville Springs</option>
+                <option value="rubber_springs">Rubber Springs</option>
+                <option value="stress_factors_helical_springs">Stress Factors for Helical Springs (Graphical)</option>
+                <option value="buckling_factor_helical_springs">Buckling Factor for Helical Compression Springs (Graphical)</option>
+                <option value="fatigue_strength_diagram_springs">Fatigue Strength Diagram for Cold Coiled Compression Springs</option>
+            </optgroup>
+        </select>
+        <button id="locateInfoButton">Locate Information in Handbook</button>
+        <div class="output" id="locatorOutput">
+            Select a concept or term from the dropdown to find its location and details in the "Design Data Handbook."
+        </div>
+    </div>
+
+    <!-- Added a footer for the creator's name -->
+    <footer>
+        <p>Created by: Siddesh B </p>
+        <p>Dept of Mechanical Engineering </p>
+        <p> UBDT College Of Engineering Davanagere </p> 
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const searchConceptSelector = document.getElementById("searchConcept");
+            const locateInfoButton = document.getElementById("locateInfoButton");
+            const locatorOutput = document.getElementById("locatorOutput");
+
+            // This large object will map study guide terms to handbook locations and brief descriptions.
+            // I'll populate this with data extracted from your study guide, citing the handbook pages.
+            const studyGuideHandbookMap = {
+                // I. Stress Analysis
+                "simple_stresses_strains": {
+                    title: "Simple Stresses and Strains",
+                    description: "Fundamental concepts including direct stress (tension/compression), bending stress, direct shear stress, torsional shear stress, strain, and deformation.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Equation", number: "1.1(a)", description: "Direct stress (σ = F/A)", page: "17" },
+                        { type: "Equation", number: "1.1(b)", description: "Maximum Bending stress (σ_b = M/Z)", page: "17" },
+                        { type: "Equation", number: "1.1(c)", description: "Direct shear stress (τ_D = F_s/A_s)", page: "17" },
+                        { type: "Equation", number: "1.1(d)", description: "Maximum Torsional shear stress (τ = T/Zp)", page: "17" },
+                        { type: "Equation", number: "1.2(a)", description: "Strain or deformation per unit length", page: "17" },
+                        { type: "Equation", number: "1.2(b)", description: "Total elongation due to direct axial load", page: "18" },
+                        { type: "Equation", number: "1.2(c)", description: "Shear strain due to direct shear force", page: "18" },
+                        { type: "Equation", number: "1.3(a)", description: "General bending equation", page: "18" },
+                        { type: "Equation", number: "1.3(b)", description: "General torsion equation", page: "18" },
+                        { type: "Figure", number: "1.1(a)-(d)", description: "Illustrations of simple stress types", page: "17" }
+                    ]
+                },
+                "combined_stresses": {
+                    title: "Combined Stresses",
+                    description: "Analysis of stress states when a component is subjected to multiple types of simple stresses simultaneously (axial and bending; axial, bending, and torsional). Focus on maximum normal and shear stresses.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Equation", number: "1.4", description: "Maximum normal stress due to combined axial and bending loads", page: "18" },
+                        { type: "Equation", number: "1.5(a)", description: "Maximum normal stress (combined axial, bending, and torsional loads) - Max Normal Stress Theory", page: "18" },
+                        { type: "Equation", number: "1.5(b)", description: "Maximum shear stress (combined axial, bending, and torsional loads) - Max Shear Stress Theory", page: "18" },
+                        { type: "Figure", number: "1.2(a)-(d)", description: "Illustrations of combined loading scenarios", page: "18" }
+                    ]
+                },
+                "compound_stresses": {
+                    title: "Compound Stresses",
+                    description: "Detailed analysis of uniaxial, biaxial, and plane stress systems, including determination of principal stresses and use of Mohr's circle diagram.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Equation", number: "1.6(a)-(f)", description: "Normal & Shear stress, Principal stresses (Uniaxial stress system)", page: "19" },
+                        { type: "Equation", number: "1.7(a)-(h)", description: "Normal & Shear stress, Principal stresses (Biaxial stress system)", page: "19" },
+                        { type: "Equation", number: "1.8(a)-(g)", description: "Normal & Shear stress, Principal stresses (Plane stress system)", page: "20" },
+                        { type: "Equation", number: "1.9(a)-(d)", description: "Mohr's circle diagram equation", page: "21" },
+                        { type: "Figure", number: "1.3(a)-(b)", description: "Uniaxial and Biaxial stress systems", page: "19" },
+                        { type: "Figure", number: "1.4(a)-(c)", description: "Plane stress system and direction of stresses", page: "20" },
+                        { type: "Figure", number: "1.5(a)-(b)", description: "Plane stress system & Mohr's circle diagram", page: "21" }
+                    ]
+                },
+                "superposition_eccentric_loading": {
+                    title: "Superposition (Eccentric Loading)",
+                    description: "Calculating maximum normal stress due to direct tension or compression combined with bending caused by eccentric load application.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Equation", number: "1.10", description: "Maximum normal stress (Eccentric loading)", page: "22" },
+                        { type: "Figure", number: "1.6", description: "Eccentric load illustration", page: "22" }
+                    ]
+                },
+                "stresses_in_terms_of_strains": {
+                    title: "Stresses in Terms of Strains",
+                    description: "Relating normal stresses to strains, incorporating Poisson's ratio and considering triaxial deformations.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Equation", number: "1.11(a)", description: "Poisson's ratio", page: "22" },
+                        { type: "Equation", number: "1.11(b), (c)", description: "Resultant unit deformation or strain in X/Y directions (Biaxial)", page: "22" },
+                        { type: "Equation", number: "1.11(d), (e)", description: "Normal stress in X/Y directions in terms of strains (Biaxial)", page: "22" },
+                        { type: "Equation", number: "1.12(a)-(c)", description: "Resultant unit deformation or strain in X/Y/Z directions (Triaxial)", page: "22" },
+                        { type: "Equation", number: "1.12(d)", description: "Relation between E, G, and μ", page: "22" },
+                        { type: "Figure", number: "1.7", description: "Triaxial stress system", page: "22" }
+                    ]
+                },
+                "hertz_contact_stresses": {
+                    title: "Hertz Contact Stresses",
+                    description: "Stresses developed at the contact surface between two curved bodies, specifically spherical and cylindrical surfaces, under pressure.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Topic", description: "Hertz Contact Stresses", page: "23" },
+                        { type: "Equation", number: "1.13(a)-(d)", description: "Spherical surfaces (radius of contact area, max pressure)", page: "23" },
+                        { type: "Equation", number: "1.14(a)-(d)", description: "Cylindrical surfaces (half width of contact area, max pressure)", page: "23-24" },
+                        { type: "Figure", number: "1.8(a), (b)", description: "Pressure distribution between spheres and cylinders", page: "23" }
+                    ]
+                },
+                "thermal_stresses": {
+                    title: "Thermal Stresses",
+                    description: "Stress induced in a material when its thermal expansion or contraction is constrained, including thermal expansion and change in length.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Topic", description: "Thermal stresses", page: "24" },
+                        { type: "Equation", number: "1.15(a)", description: "Thermal expansion", page: "24" },
+                        { type: "Equation", number: "1.15(b)", description: "Total length at a given temperature", page: "24" },
+                        { type: "Equation", number: "1.15(c)", description: "Stress set up in bar due to temperature change", page: "24" }
+                    ]
+                },
+                "columns_stress_analysis": {
+                    title: "Columns (Stress Analysis)",
+                    description: "Formulas for critical load and induced stress in columns under axial compression, including Euler's, parabolic, straight line, and Rankine formulas, as well as Ritter's formula for eccentrically loaded columns.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Topic", description: "Columns", page: "24" },
+                        { type: "Equation", number: "1.16(a)", description: "Euler's column formula for critical load", page: "24" },
+                        { type: "Equation", number: "1.16(b)", description: "Parabolic column formula for critical load", page: "25" },
+                        { type: "Equation", number: "1.16(c)", description: "Straight line column formula for critical load", page: "25" },
+                        { type: "Equation", number: "1.16(d)", description: "Rankine formula for induced stress", page: "25" },
+                        { type: "Equation", number: "1.16(e)", description: "Ritter's formula for induced stress (modification of Rankine)", page: "25" },
+                        { type: "Equation", number: "1.16(f)", description: "Maximum combined stress for eccentrically loaded columns (Ritter's)", page: "25" },
+                        { type: "Table", title: "Table 1.2 The Values of Constant 'a' in equation 1.16(d)", page: "26" },
+                        { type: "Figure", number: "1.9", description: "End conditions of columns", page: "24" }
+                    ]
+                },
+                "material_properties_stress_analysis": {
+                    title: "Material Properties (Stress Analysis)",
+                    description: "Key physical constants of common materials including Modulus of Elasticity, Modulus of Rigidity, Poisson's ratio, and Density.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Table", title: "Table 1.1 Physical constants of some common materials", page: "26" }
+                    ]
+                },
+                "cross_sections_properties": {
+                    title: "Properties of Various Cross-Sections",
+                    description: "Formulas for Moment of Inertia, Section Modulus, and Radius of Gyration for various common cross-sectional shapes (e.g., rectangular, circular, I-beam).",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Table", title: "Table 1.3 (a) Properties of Various Cross Sections", page: "27-28" },
+                        { type: "Table", title: "Table 1.3 (b) Properties of Various Cross Sections (Polar Moments)", page: "29" }
+                    ]
+                },
+                "beam_formulas": {
+                    title: "Shear, Moment and Deflection Formulas for Beams",
+                    description: "Comprehensive formulas for reactions, shear, bending moment, and deflection under various loading and support conditions including cantilever, simply supported, uniformly loaded, intermediate loads, and fixed ends.",
+                    references: [
+                        { type: "Chapter", name: "1 Stress Analysis", pages: "1-18" },
+                        { type: "Table", title: "Table 1.4 Shear, Moment and Deflection Formulas for Beams", page: "30-32" }
+                    ]
+                },
+
+                // II. Working Stresses
+                "stress_concentration_working": {
+                    title: "Stress Concentration",
+                    description: "Understanding stress risers, theoretical stress concentration factor (K_t), notch sensitivity (q), and fatigue stress concentration factor (K_f).",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Equation", number: "2.1(a)-(c)", description: "Maximum stresses at discontinuity (direct, bending, torsion)", page: "20" },
+                        { type: "Equation", number: "2.2", description: "Transverse stress around hole in infinite plate", page: "21" },
+                        { type: "Equation", number: "2.3", description: "Combined maximum stress (plate with hole under biaxial stresses)", page: "21" },
+                        { type: "Equation", number: "2.4", description: "Notch sensitivity index", page: "21" },
+                        { type: "Equation", number: "2.5", description: "Estimated fatigue stress concentration factor for normal stress", page: "21" },
+                        { type: "Equation", number: "2.6", description: "Estimated combined fatigue factor for normal stress", page: "21" },
+                        { type: "Equation", number: "2.7", description: "Estimated fatigue stress concentration factor for shear stress", page: "21" },
+                        { type: "Table", title: "Table 2.1 Stress Concentration Factors", page: "30-31" },
+                        { type: "Table", title: "Table 2.3 Chart for Guidance in Selecting Stress-Concentration Factors", page: "32" },
+                        { type: "Figure", number: "2.1(a)-(c)", description: "Stress concentration illustrations (tensile, bending, shear)", page: "20" },
+                        { type: "Figure", number: "2.2", description: "Form Stress Factor due to hole in a plate", page: "21" }
+                    ]
+                },
+                "theories_of_failure": {
+                    title: "Theories of Failure",
+                    description: "Application of various theories to predict material failure: Maximum normal stress (Rankine), maximum strain (Saint-Venant's), maximum shear stress (Guest's), shear energy (Hencky-Von Mises), and Total strain energy (Haigh's) theories.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Equation", number: "2.8(a)", description: "Stress according to Max Normal Stress Theory (Rankine)", page: "21" },
+                        { type: "Equation", number: "2.8(b)", description: "Stress according to Max Strain Theory (Saint-Venant's)", page: "22" },
+                        { type: "Equation", number: "2.8(c)", description: "Stress according to Max Shear Stress Theory (Guest's)", page: "22" },
+                        { type: "Equation", number: "2.8(d)", description: "Stress according to Shear Energy Theory (Hencky-Von Mises)", page: "22" },
+                        { type: "Equation", number: "2.8(e)", description: "Stress according to Total Strain Energy Theory (Haigh's)", page: "22" },
+                        { type: "Table", title: "Table 2.6 Comparison of Theories of Failure", page: "33" }
+                    ]
+                },
+                "design_for_strength_size": {
+                    title: "Design for Strength (Influence of Size)",
+                    description: "Understanding the effect of component size on the elastic limit of the material.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Equation", number: "2.9(a), (b)", description: "Elastic limit for any thickness (h), Size factor B", page: "22" },
+                        { type: "Table", title: "Table 2.5 Strength Ratios for Various Materials", page: "33" },
+                        { type: "Figure", number: "2.3, 2.4", description: "Influence of Size on Elastic Limit", page: "37" }
+                    ]
+                },
+                "static_loads_working": {
+                    title: "Static Loads (Working Stresses)",
+                    description: "Calculation of design stress for static loads and bearing stress, incorporating reliability factor.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Equation", number: "2.10", description: "Design stress for a static load", page: "23" },
+                        { type: "Equation", number: "2.11", description: "Bearing stress", page: "23" },
+                        { type: "Table", title: "Table 2.7 Reliability Factor", page: "33" }
+                    ]
+                },
+                "design_for_fatigue": {
+                    title: "Design for Fatigue",
+                    description: "Designing components under repeated or fluctuating stresses, including endurance strength, endurance limit with discontinuity, and using Goodman, Gerber, and Soderberg relations.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Equation", number: "2.12(a), (b)", description: "Endurance or fatigue stress concentration factor, Design stress for completely reversed loads", page: "23" },
+                        { type: "Equation", number: "2.13(a)-(c)", description: "Relation between tensile strength and endurance limit (for steel, cast iron, nonferrous metals)", page: "23" },
+                        { type: "Equation", number: "2.14(a)-(c)", description: "Direct stress endurance limit in terms of σ_en and σ_u", page: "23" },
+                        { type: "Equation", number: "2.15(a)-(c)", description: "Cyclic torsion endurance limit in terms of σ_en and σ_u", page: "23" },
+                        { type: "Equation", number: "2.16(a), (b)", description: "Average or mean stress and Variable stress component for static plus alternating loads", page: "23" },
+                        { type: "Equation", number: "2.17(a), (b)", description: "Design stress and required cross-sectional area for alternating loads", page: "24" },
+                        { type: "Equation", number: "2.18(a)-(c)", description: "Equivalent static load for cyclic (axial, bending, torsional) loads", page: "24" },
+                        { type: "Equation", number: "2.19(a)-(e)", description: "Fatigue Failure Equations (Gerber's, Goodman's, Soderberg's relations for normal & torsional stress)", page: "24-25" },
+                        { type: "Equation", number: "2.20(a)-(c)", description: "Maximum cyclic stress in terms of endurance limit (Goodman, Soderberg)", page: "25" },
+                        { type: "Equation", number: "2.21(a)-(e)", description: "Goodman's and Soderberg's relations with correction factors", page: "25" },
+                        { type: "Figure", number: "2.5", description: "Fluctuating Stress illustration", page: "39" },
+                        { type: "Figure", number: "2.6", description: "Fatigue Failure Equations (Diagrams)", page: "39" },
+                        { type: "Figure", number: "Modified Goodman Diagram", description: "Modified Goodman Diagram", page: "47" }
+                    ]
+                },
+                "equivalent_stresses": {
+                    title: "Equivalent Stresses",
+                    description: "Calculating equivalent maximum shear and normal stresses for complex loading scenarios.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Equation", number: "2.22(a), (b)", description: "Equivalent normal and shear stresses", page: "26" },
+                        { type: "Equation", number: "2.23(a)", description: "Equivalent maximum shear stress", page: "26" },
+                        { type: "Equation", number: "2.23(b)", description: "Equivalent maximum normal stress (for brittle materials)", page: "26" }
+                    ]
+                },
+                "inertia_centrifugal_loads": {
+                    title: "Inertia Stresses and Centrifugal Loads",
+                    description: "Analysis of stresses and forces due to rotating masses, including general centrifugal force expressions, and bending and axial components of centrifugal force in coupling rods.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Equation", number: "2.24(a)", description: "General expression for centrifugal force", page: "26" },
+                        { type: "Equation", number: "2.24(b)", description: "Centrifugal force per unit volume", page: "26" },
+                        { type: "Equation", number: "2.24(c)-(h)", description: "Centrifugal force, bending component, axial component, and maximums for coupling rod", page: "26-27" },
+                        { type: "Figure", number: "2.7(a), (b)", description: "Locomotive Coupling Rod illustration", page: "42" }
+                    ]
+                },
+                "resilience_working": {
+                    title: "Resilience (Working Stresses)",
+                    description: "The energy absorbed by a body under tension, compression, bending, shear, and torsion, both without and with impact.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Topic", description: "Resilience", page: "28" },
+                        { type: "Equation", number: "2.27(a)", description: "Resilience of a body (general)", page: "28" },
+                        { type: "Equation", number: "2.27(b)", description: "Resilience in tension or compression", page: "29" },
+                        { type: "Equation", number: "2.27(c)", description: "Resilience in bending", page: "29" },
+                        { type: "Equation", number: "2.27(d)", description: "Resilience in shear", page: "29" },
+                        { type: "Equation", number: "2.27(e)", description: "Resilience in torsion", page: "29" },
+                        { type: "Table", title: "Table 2.9 Maximum Resilience Per Unit Volume", page: "34" },
+                        { type: "Table", title: "Table 2.10 Resilience in Tension", page: "35" }
+                    ]
+                },
+                "stress_concentration_factors_tables": {
+                    title: "Stress Concentration Factors Tables",
+                    description: "Tables for K_t values for various irregularities and loading types, including holes, notches, fillets, keyways, gear teeth, and curved beams.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Table", title: "Table 2.1 Stress Concentration Factors", page: "30-31" },
+                        { type: "Figure", number: "2.9", description: "Stress concentration for a plate with hole in tension", page: "45" },
+                        { type: "Figure", number: "2.10", description: "Form-Factor ratio due to notches", page: "45" },
+                        { type: "Figure", number: "2.11", description: "Stress Concentration at the Edge of an Elliptical Hole in a Plate", page: "51" },
+                        { type: "Figure", number: "2.12", description: "Stress Concentration Factor K_t for a plate with hole in tension", page: "51" },
+                        { type: "Figure", number: "2.13", description: "Stress concentration factor for a flat bar with a transverse hole in bending", page: "52" },
+                        { type: "Figure", number: "2.14", description: "Stress Concentration Factor K_t for a notched Flat bar in tension", page: "52" },
+                        { type: "Figure", number: "2.15", description: "Stress Concentration Factor K_t for a notched Flat bar in bending", page: "53" },
+                        { type: "Figure", number: "2.16", description: "Stress Concentration Factor K_t for Stepped flat bar in tension", page: "53" },
+                        { type: "Figure", number: "2.17", description: "Stress Concentration Factor K_t for Stepped flat bar in bending", page: "54" },
+                        { type: "Figure", number: "2.18", description: "Stress Concentration Factor K_t for a grooved shaft in Bending", page: "54" },
+                        { type: "Figure", number: "2.19", description: "Combined factor K for a grooved shaft in tension", page: "55" },
+                        { type: "Figure", number: "2.20", description: "Stress Concentration Factor K_t for a grooved shaft in bending", page: "55" },
+                        { type: "Figure", number: "2.21", description: "Combined factor K for a grooved shaft in bending", page: "56" },
+                        { type: "Figure", number: "2.22", description: "Stress Concentration Factor K_t for a grooved shaft in torsion", page: "56" },
+                        { type: "Figure", number: "2.23", description: "Stress-concentration factor K_t for a stepped shaft in tension", page: "57" },
+                        { type: "Figure", number: "2.24", description: "Combined factor K for a stepped shaft in tension", page: "57" },
+                        { type: "Figure", number: "2.25", description: "Stress-concentration factor K_t for a stepped shaft in bending", page: "58" },
+                        { type: "Figure", number: "2.26", description: "Combined factor K for a stepped shaft in bending", page: "58" },
+                        { type: "Figure", number: "2.27", description: "Stress-concentration factor K_ts for a stepped shaft in torsion", page: "59" },
+                        { type: "Figure", number: "2.28", description: "Stress-concentration factor K_t for a shaft with transverse hole", page: "59" },
+                        { type: "Figure", number: "2.29", description: "Stress concentration factor for a shaft with transverse hole in torsion", page: "60" },
+                        { type: "Figure", number: "2.30", description: "Theoretical stress-concentration factor K_t for a curved bar in bending", page: "60" }
+                    ]
+                },
+                "surface_condition_size_factors": {
+                    title: "Surface Condition and Size Factors",
+                    description: "Correction factors (C) for machine surface and hot rolled surface that influence working stresses.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Table", title: "Table 2.2 The average values of the surface correction factor C", page: "32" }
+                    ]
+                },
+                "sensitivity_index": {
+                    title: "Sensitivity Index (q)",
+                    description: "Average index of sensitivity for different materials and heat treatments for repeated stresses.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Table", title: "Table 2.4 Index of Sensitivity for Repeated Stresses", page: "32" },
+                        { type: "Figure", number: "2.31", description: "Average notch sensitivity graph", page: "61" }
+                    ]
+                },
+                "reliability_factor": {
+                    title: "Reliability Factor (R)",
+                    description: "Values of reliability factor for different design scenarios and material types.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Table", title: "Table 2.7 Reliability Factor", page: "33" }
+                    ]
+                },
+                "modulus_of_resilience_unit_volume": {
+                    title: "Modulus of Resilience per unit volume",
+                    description: "Values for maximum resilience per unit volume for various loading types (tension/compression, shear, bending, torsion, springs).",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Table", title: "Table 2.9 Maximum Resilience Per Unit Volume", page: "34" }
+                    ]
+                },
+                "permissible_shear_stress_springs": {
+                    title: "Permissible Shear Stress (Compression Springs)",
+                    description: "Graphical data for permissible shear stress for different grades of spring steel (likely in Chapter 11, but referenced here from Working Stresses).",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        // This specific graph is not in the provided "Working Stresses" snippets, but a similar concept might exist in Chapter 11.
+                        { type: "Note", description: "Specific graph data not present in provided 'Working Stresses' snippets. Refer to Chapter 11 for spring material properties." }
+                    ]
+                },
+                "fatigue_strength_diagram": {
+                    title: "Fatigue Strength Diagram (Modified Goodman)",
+                    description: "Modified Goodman Diagram for fluctuating stresses, illustrating yield line, Gerber parabola, Goodman line, and Soderberg line.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Figure", number: "Modified Goodman Diagram", description: "Modified Goodman Diagram", page: "47" }
+                    ]
+                },
+
+                // III. Design of Shafts
+                "torsion_circular_shafts": {
+                    title: "Torsion of Circular Shafts",
+                    description: "Equations for maximum torsional shear stress, angular deformation, and torque transmitted by solid and hollow shafts.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Equation", number: "3.1", description: "Maximum torsional shear stress", page: "50" },
+                        { type: "Equation", number: "3.2", description: "Angular deformation", page: "50" },
+                        { type: "Equation", number: "3.3(a), (b)", description: "Torque transmitted by shaft (SI and Metric Units)", page: "50" }
+                    ]
+                },
+                "hollow_shafts": {
+                    title: "Hollow Shafts Design",
+                    description: "Equations for outside diameter of hollow shafts subjected to simple torsion, simple bending, and combined bending and torsion (based on maximum normal and shear stress theories).",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Equation", number: "3.4(a)", description: "Outside diameter of hollow shaft (simple torsion)", page: "50" },
+                        { type: "Equation", number: "3.4(b)", description: "Outside diameter of hollow shaft (simple bending)", page: "50" },
+                        { type: "Equation", number: "3.5(a), (b)", description: "Outside diameter of hollow shaft (combined bending and torsion)", page: "50" }
+                    ]
+                },
+                "asme_shaft_design": {
+                    title: "ASME Code for Design of Transmission Shafting",
+                    description: "Design equations for transmission shafting based on maximum normal stress theory and maximum shear stress theory, including consideration for fluctuating loads and Mises-Hencky theory.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Equation", number: "3.6(a), (b)", description: "ASME Code (Max Normal Stress Theory, Max Shear Stress Theory)", page: "51" },
+                        { type: "Equation", number: "3.7(a)-(c)", description: "ASME Code for Fluctuating loads (Max Normal, Max Shear, Mises-Hencky theories)", page: "51" },
+                        { type: "Table", title: "Table 3.1 Constants for ASME Code (Shock and Endurance Factors)", page: "71" }
+                    ]
+                },
+                "axial_load_shafts": {
+                    title: "Axial Load in addition to Torsion/Bending (Shafts)",
+                    description: "Equations for outside diameter of hollow shafts subjected to an axial load in addition to torsional and bending loads, based on maximum normal and shear stress theories.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Equation", number: "3.8(a), (b)", description: "Outside diameter of hollow shaft (axial, torsional, bending loads)", page: "51" },
+                        { type: "Table", title: "Table 3.2 Value of α to use in Equation 3.8(a) and 3.8(b)", page: "71" }
+                    ]
+                },
+                "effect_of_keyways_shafts": {
+                    title: "Effect of Keyways (Shafts)",
+                    description: "H.F. Moore's formulas for determining the shaft strength factor and the ratio of angular twist of a shaft with keyway compared to one without.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Topic", description: "Effect of Keyways", page: "52" },
+                        { type: "Equation", number: "3.10", description: "Moore's formula for shaft strength factor (Keyways)", page: "52" },
+                        { type: "Equation", number: "3.11", description: "Moore's formula for angular twist ratio (Keyways)", page: "52" },
+                        { type: "Table", title: "Table 3.4 Fatigue Stress concentration Factors in bending for shafts with keyways", page: "72" }
+                    ]
+                },
+                "crank_shafts": {
+                    title: "Crank Shafts",
+                    description: "Calculation of forces on crank arm (connecting rod force, tangential, radial), and determination of crank pin and main bearing diameters and lengths.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Topic", description: "Crank Shaft Design", page: "52-55" },
+                        { type: "Equation", number: "3.12(a)-(c)", description: "Forces on crank arm (connecting rod, tangential, radial)", page: "52" },
+                        { type: "Equation", number: "3.13(a), (b)", description: "Diameter of crank pin at the root and journal", page: "52" },
+                        { type: "Equation", number: "3.14", description: "Length of crank pin", page: "53" },
+                        { type: "Equation", number: "3.15(a)-(c)", description: "Diameter of crank shaft at root, journal, and length of main bearing", page: "53" },
+                        { type: "Equation", number: "3.16", description: "Diameter of crank pin (American Bureau of Shipping method)", page: "53" },
+                        { type: "Table", title: "Table 3.8 Coefficient 'a' in the American Bureau of Shipping Formula 3.16", page: "73" },
+                        { type: "Figure", number: "3.1", description: "Forces on crank arm", page: "53" },
+                        { type: "Figure", number: "3.2", description: "Typical Built-up Over Hung Crank Shaft", page: "53" },
+                        { type: "Figure", number: "3.3", description: "American Bureau of Shipping Method illustration", page: "54" },
+                        { type: "Figure", number: "3.5", description: "Built-up Over Hung Crank Shaft", page: "54" },
+                        { type: "Figure", number: "3.6", description: "Forged Centre Crank", page: "70" },
+                        { type: "Figure", number: "3.7", description: "Built-up Centre Crank Shaft", page: "70" },
+                        { type: "Figure", number: "3.8", description: "Cast Iron Crank Disc", page: "70" }
+                    ]
+                },
+                "torsion_rectangular_bars": {
+                    title: "Torsion of Rectangular Bars",
+                    description: "Equations for shear stress at specific points and angle of twist for rectangular bars subjected to torsion.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Topic", description: "Torsion of rectangular bars", page: "54" },
+                        { type: "Equation", number: "3.17(a), (b)", description: "Shear stress at points A1 and A2", page: "54" },
+                        { type: "Equation", number: "3.17(c)", description: "Angle of twist (radians per mm of length)", page: "54" },
+                        { type: "Table", title: "Table 3.7 Constant for torsion of rectangular bars (α1, α2, β)", page: "73" },
+                        { type: "Figure", number: "3.4", description: "Rectangular bar section", page: "54" }
+                    ]
+                },
+                "properties_shafting_materials": {
+                    title: "Properties of Shafting Materials",
+                    description: "Ultimate strength, yield point, elastic limit, endurance limit, and percentage elongation for various steel types used in shafting.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Table", title: "Table 3.3 Properties of Shafting Materials", page: "71" }
+                    ]
+                },
+                "allowable_bearing_pressure": {
+                    title: "Allowable Bearing Pressure",
+                    description: "Values for main bearing pressure (P_bs) and crank pin pressure (P_bc) for different classes of work (e.g., Automobile Engines, Diesel Engines, Shears and Punches).",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Table", title: "Table 3.6 Allowable bearing pressure", page: "73" }
+                    ]
+                },
+                "constant_torsion_rectangular_bars": {
+                    title: "Constant for Torsion of Rectangular Bars",
+                    description: "Values for constants α1, α2, and β used in torsion equations for rectangular bars, based on b/c ratio.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Table", title: "Table 3.7 Constant for torsion of rectangular bars", page: "73" }
+                    ]
+                },
+                "coefficient_a_abs_formula": {
+                    title: "Coefficient 'a' in American Bureau of Shipping Formula",
+                    description: "Values for coefficient 'a' used in Formula 3.16 for crank pin diameter, based on cylinder type, number of cylinders, and ratio of stroke to distance over crank webs.",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Table", title: "Table 3.8 Coefficient 'a' in the American Bureau of Shipping Formula 3.16", page: "73" }
+                    ]
+                },
+                "diagrams_shafting_systems": {
+                    title: "Diagrams of Shafting Systems",
+                    description: "Schematic diagrams illustrating typical power transmission systems involving shafts, couplings, gears, and bearings (e.g., Gasoline-Engine-Powered Portable Air Compressor).",
+                    references: [
+                        { type: "Chapter", name: "3 Design of Shafts", pages: "49-74" },
+                        { type: "Figure", number: "Schematic diagram of Gasoline-Engine-Powered Portable Air Compressor", page: "74" }
+                    ]
+                },
+
+                // IV. Keys, Pins, Cotter and Knuckle Joints
+                "square_rectangular_keys": {
+                    title: "Square and Rectangular Keys",
+                    description: "Design considerations and equations for crushing strength, shear strength, and torque transmitted by square and rectangular keys.",
+                    references: [
+                        { type: "Chapter", name: "4 Keys, Pins, Cotter and Knuckle Joints", pages: "61-92" },
+                        { type: "Equation", number: "4.1", description: "Width of square key (b = d/4)", page: "61" },
+                        { type: "Equation", number: "4.2(a)", description: "Width of rectangular key (b = d/4)", page: "61" },
+                        { type: "Equation", number: "4.2(b)", description: "Height of rectangular key (h = d/6)", page: "61" },
+                        { type: "Equation", number: "4.3", description: "Tangential pressure per unit length of key", page: "61" },
+                        { type: "Equation", number: "4.4(a), (b), (c)", description: "Torque transmitted by key (crushing strength)", page: "62" },
+                        { type: "Equation", number: "4.5(a), (b), (c)", description: "Torque transmitted by key (shear strength)", page: "62" },
+                        { type: "Figure", number: "4.1(a), (b)", description: "Rectangular Key & Pressures between key and key seat", page: "77" },
+                        { type: "Table", title: "Table 4.1 Dimensions of Parallel keys and keyways (IS:2048)", page: "84" }
+                    ]
+                },
+                "taper_keys": {
+                    title: "Taper Keys",
+                    description: "Analysis of forces and torque for taper keys, including relation between circumferential force and pressure, and axial effort needed to drive the key home.",
+                    references: [
+                        { type: "Chapter", name: "4 Keys, Pins, Cotter and Knuckle Joints", pages: "61-92" },
+                        { type: "Equation", number: "4.6", description: "Relation between circumferential force F_t and pressure F (Taper keys)", page: "62" },
+                        { type: "Equation", number: "4.7", description: "Pressure F between shaft and hub (Taper keys)", page: "62" },
+                        { type: "Equation", number: "4.8", description: "Relation between torque T and force F_t (Taper keys)", page: "63" },
+                        { type: "Equation", number: "4.9", description: "Necessary key length (Taper keys)", page: "63" },
+                        { type: "Equation", number: "4.10", description: "Axial effort F_a necessary to drive the key home (Taper keys)", page: "63" },
+                        { type: "Table", title: "Table 4.2 Taper keys and keyways (IS:2292-1963)", page: "85" },
+                        { type: "Figure", number: "4.2", description: "Diagram of forces acting on a taper key", page: "78" }
+                    ]
+                },
+                "feather_keys": {
+                    title: "Feather Keys",
+                    description: "Torque calculations and resistance for one or two feather keys, considering circumferential force and resistance during lengthwise hub shift.",
+                    references: [
+                        { type: "Chapter", name: "4 Keys, Pins, Cotter and Knuckle Joints", pages: "61-92" },
+                        { type: "Equation", number: "4.11(a)-(d)", description: "One feather key (torque, circumferential force, opposite forces, resistance)", page: "63" },
+                        { type: "Equation", number: "4.12(a)-(e)", description: "Two feather keys (torque, circumferential force, opposite forces, resistance)", page: "63" },
+                        { type: "Figure", number: "4.3(a), (b)", description: "Feather keys illustration", page: "78" }
+                    ]
+                },
+                "round_taper_pins": {
+                    title: "Round Taper Pins",
+                    description: "Formulas for large diameter, small end diameter, and mean diameter of round taper pins.",
+                    references: [
+                        { type: "Chapter", name: "4 Keys, Pins, Cotter and Knuckle Joints", pages: "61-92" },
+                        { type: "Equation", number: "4.13(a)-(c)", description: "Diameters of round taper pin keys", page: "64" },
+                        { type: "Table", title: "Table 4.3 (a) Standard right duty Taper Pins", page: "86" },
+                        { type: "Table", title: "Table 4.3 (b) Standard heavy duty Taper Pins", page: "86" }
+                    ]
+                },
+                "splines": {
+                    title: "Splines (Parallel Side and Involute)",
+                    description: "Calculations for torque transmitted, area of resisting shear, torque capacity in bearing stress, and minimum height of contact for both parallel side (straight sided) and involute splines.",
+                    references: [
+                        { type: "Chapter", name: "4 Keys, Pins, Cotter and Knuckle Joints", pages: "61-92" },
+                        { type: "Equation", number: "4.14", description: "Torque transmitted by parallel side splines", page: "64" },
+                        { type: "Equation", number: "4.15(a)-(g)", description: "Involute Splines (Area of resisting shear, Torque capacity)", page: "64-65" },
+                        { type: "Table", title: "Table 4.4 Straight sided splines (IS:2327-1963)", page: "87" },
+                        { type: "Table", title: "Table 4.5 Dimensions for involute splines (IS:3665-1966)", page: "88" },
+                        { type: "Figure", number: "Splined shaft and hub profile", description: "Illustration of splines", page: "72" }
+                    ]
+                },
+                "cotter_joint": {
+                    title: "Cotter Joint",
+                    description: "Design equations for tearing, crushing, and shearing resistances of the rod, socket, and cotter. Includes bending moment on the collar and thrust collar shearing resistance.",
+                    references: [
+                        { type: "Chapter", name: "4 Keys, Pins, Cotter and Knuckle Joints", pages: "61-92" },
+                        { type: "Equation", number: "4.16(a)-(g)", description: "Design of rod (tearing, crushing, shearing resistance)", page: "65" },
+                        { type: "Equation", number: "4.17(a)-(e)", description: "Design of socket (tearing, crushing, shearing resistance, diameter)", page: "82" },
+                        { type: "Equation", number: "4.18(a), (b)", description: "Design of cotter (shearing resistance, bending moment)", page: "82" },
+                        { type: "Figure", number: "4.4", description: "Cotter Joint illustration", page: "81" }
+                    ]
+                },
+                "knuckle_joint": {
+                    title: "Knuckle Joint",
+                    description: "Design equations for tearing, shearing, and crushing resistances of the rod, eye, forked end, and pin components of a knuckle joint.",
+                    references: [
+                        { type: "Chapter", name: "4 Keys, Pins, Cotter and Knuckle Joints", pages: "61-92" },
+                        { type: "Equation", number: "4.19(a)-(b)", description: "Tearing resistance of rod and fork", page: "82" },
+                        { type: "Equation", number: "4.20(a)-(c)", description: "Shearing resistance of pin", page: "82" },
+                        { type: "Equation", number: "4.21(a)-(d)", description: "Crushing resistance of rod end and fork end", page: "82" },
+                        { type: "Figure", number: "4.5", description: "Knuckle Joint illustration", page: "83" }
+                    ]
+                },
+                "key_dimensions_tolerances": {
+                    title: "Key Dimensions and Tolerances",
+                    description: "Tables for standard dimensions and tolerances for various key types including parallel keys, taper keys, taper pins, splines, and woodruff keys.",
+                    references: [
+                        { type: "Chapter", name: "4 Keys, Pins, Cotter and Knuckle Joints", pages: "61-92" },
+                        { type: "Table", title: "Table 4.1 Dimensions of Parallel keys and keyways (IS:2048)", page: "84" },
+                        { type: "Table", title: "Table 4.2 Taper keys and keyways (IS:2292-1963)", page: "85" },
+                        { type: "Table", title: "Table 4.3 (a) Standard right duty Taper Pins", page: "86" },
+                        { type: "Table", title: "Table 4.3 (b) Standard heavy duty Taper Pins", page: "86" },
+                        { type: "Table", title: "Table 4.4 Straight sided splines (IS:2327-1963)", page: "87" },
+                        { type: "Table", title: "Table 4.5 Dimensions for involute splines (IS:3665-1966)", page: "88" },
+                        { type: "Table", title: "Table 4.6 Gib-Head keys and keyways (IS:2293-1974)", page: "89" },
+                        { type: "Table", title: "Table 4.7 Relationship of shaft diameter to key size (woodruff) (IS:2294-1980)", page: "90" },
+                        { type: "Table", title: "Table 4.8 Dimensions and Tolerances of keys (Woodruff)", page: "91" },
+                        { type: "Table", title: "Table 4.9 Dimensions and Tolerances of keyways (Woodruff) (IS:2294-1980)", page: "92" }
+                    ]
+                },
+
+                // V. Riveted Joints
+                "types_riveted_joints": {
+                    title: "Types of Riveted Joints",
+                    description: "Classification of riveted joints including lap joints and butt joints (single, double, triple, quadruple riveted, with single or double straps).",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Figure", number: "Forms of riveted joints (various figures)", description: "Illustrations of different riveted joint types", page: "93" },
+                        { type: "Table", title: "Table 5.2 Recommended Types of Joints", page: "84" }
+                    ]
+                },
+                "thickness_shell_cover_plates": {
+                    title: "Thickness of Shell and Cover Plates (Riveted Joints)",
+                    description: "Formulas for determining the thickness of pressure vessel shells and single/double butt straps according to Indian Boiler Code.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Equation", number: "5.1", description: "Thickness of shell", page: "79" },
+                        { type: "Equation", number: "5.4(a)-(f)", description: "Thickness of single/double butt strap cover plates", page: "95" },
+                        { type: "Table", title: "Table 5.3 (a) Minimum Thickness of Boiler Plates", page: "84" }
+                    ]
+                },
+                "strength_riveted_joints": {
+                    title: "Strength of Riveted Joints",
+                    description: "Calculations for tearing resistance (tensile strength) of solid plate and plate at weakest section, resistance to shear of rivets (single/double shear), and resistance to crushing of rivets.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Equation", number: "5.6(a)-(e)", description: "Tearing resistance, Shear resistance, Crushing resistance", page: "95" },
+                        { type: "Equation", number: "5.8(a)-(b)", description: "Total resistance against failure (tearing of plate at inner row and shearing of rivets in outer row)", page: "95" },
+                        { type: "Equation", number: "5.9(a)-(d)", description: "Total resistance against failure (various combined actions)", page: "96" }
+                    ]
+                },
+                "efficiency_riveted_joints": {
+                    title: "Efficiency of Riveted Joints",
+                    description: "Theoretical efficiency calculation for riveted joints, plate efficiency, and rivet efficiency.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Equation", number: "5.7", description: "Theoretical efficiency of riveted joint", page: "95" },
+                        { type: "Equation", number: "5.9(e)", description: "Plate efficiency", page: "96" },
+                        { type: "Equation", number: "5.9(f)", description: "Rivet efficiency", page: "96" },
+                        { type: "Table", title: "Table 5.1 Efficiency of Commercial Boiler Joints", page: "84" },
+                        { type: "Table", title: "Table 5.4 (b) Recommended values for Rivet hole diameter, pitch and efficiency", page: "100" }
+                    ]
+                },
+                "empirical_rivet_diameter": {
+                    title: "Empirical Formula for Diameter of Rivet Hole",
+                    description: "Empirical formulas to determine the diameter of steel rivet holes for lap and butt joints, including Prof. Unwin's formula.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Equation", number: "5.11(a)-(d)", description: "Empirical formulas for rivet hole diameter", page: "96" },
+                        { type: "Table", title: "Table 5.3 (b) Nominal Diameters of Rivets", page: "84" }
+                    ]
+                },
+                "pitch_riveted_joints": {
+                    title: "Pitch (Riveted Joints)",
+                    description: "Calculations for optimum longitudinal pitch, maximum shorter pitch, minimum pitch, and transverse pitch (chain and staggered riveting) according to IBR and ASME Boiler Code.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Equation", number: "5.2", description: "Diagonal pitch of lap joint (staggered)", page: "79" },
+                        { type: "Equation", number: "5.3", description: "Transverse pitch of lap joint (staggered)", page: "79" },
+                        { type: "Equation", number: "5.12(a)-(f)", description: "Optimum pitch, Maximum shorter pitch, Minimum pitch, Pitch for staunchness, Permissible pitch for high pressure vessels", page: "96-97" },
+                        { type: "Equation", number: "5.13(a)-(d)", description: "Transverse pitch for butt joints (chain and staggered)", page: "97" },
+                        { type: "Equation", number: "5.14(a)-(d)", description: "Transverse pitch for equal number of rivets in rows (chain & staggered)", page: "97" },
+                        { type: "Equation", number: "5.15(a)-(b)", description: "Transverse pitch for zig-zag riveted inner rows", page: "97" },
+                        { type: "Equation", number: "5.16", description: "Margin (m) according to Indian Boiler code", page: "98" },
+                        { type: "Equation", number: "5.17(a)-(b)", description: "Diagonal pitch in staggered joint", page: "98" },
+                        { type: "Table", title: "Table 5.4 (a) Coefficient k1 in equation 5.12(b)", page: "100" }
+                    ]
+                },
+                "eccentric_loads_riveted": {
+                    title: "Eccentric Loads on Structural Connections (Riveted)",
+                    description: "Calculating direct/primary shear stress, secondary shear stress (due to torsional moment), and resultant shear force on rivets in eccentrically loaded joints.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Equation", number: "5.18", description: "Direct or primary shear stress", page: "98" },
+                        { type: "Equation", number: "5.19", description: "Secondary shear stress", page: "98" },
+                        { type: "Equation", number: "5.20", description: "Secondary force", page: "98" },
+                        { type: "Equation", number: "5.21", description: "Resultant shear force on the rivet", page: "98" },
+                        { type: "Figure", number: "5.1(a), (b)", description: "Rivet Joint with eccentric load", page: "83" }
+                    ]
+                },
+                "commercial_boiler_efficiency": {
+                    title: "Commercial Boiler Joints Efficiency",
+                    description: "Table of efficiency percentages for different types of commercial boiler joints (lap and butt) and number of rivets per pitch.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Table", title: "Table 5.1 Efficiency of Commercial Boiler Joints", page: "84" }
+                    ]
+                },
+                "recommended_joint_types": {
+                    title: "Recommended Types of Joints (Riveted)",
+                    description: "Table recommending types of butt joints (double, triple, quadruple riveted) based on shell diameter and thickness.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Table", title: "Table 5.2 Recommended Types of Joints", page: "84" }
+                    ]
+                },
+                "minimum_thickness_boiler_plates": {
+                    title: "Minimum Thickness of Boiler Plates",
+                    description: "Tables for minimum thickness of shell plates and tube sheets of fire tube boilers based on diameter.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Table", title: "Table 5.3 (a) Minimum Thickness of Boiler Plates", page: "84" }
+                    ]
+                },
+                "nominal_diameters_rivets": {
+                    title: "Nominal Diameters of Rivets",
+                    description: "Standard nominal diameters of rivets in mm (IS: 2998-1982, IS: 2155-1982, IS: 1929-1982).",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Table", title: "Table 5.3 (b) Nominal Diameters of Rivets", page: "84" }
+                    ]
+                },
+                "coefficients_k1_rivets": {
+                    title: "Coefficients k1 for Equation 5.12(b)",
+                    description: "Coefficients for calculating maximum shorter pitch in longitudinal joints for lap, single butt-strapped, and double butt-strapped joints based on number of rivets per pitch.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Table", title: "Table 5.4 (a) Coefficient k1 in equation 5.12(b)", page: "100" }
+                    ]
+                },
+                "recommended_rivet_values": {
+                    title: "Recommended Values for Rivet Hole Diameter, Pitch, and Efficiency",
+                    description: "Table providing recommended values for rivet hole diameter, maximum allowable pitch, and efficiency for various types of seams (single/double/triple riveted lap, double/triple riveted butt joints).",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Table", title: "Table 5.4 (b) Recommended values for Rivet hole diameter, pitch and efficiency", page: "100" }
+                    ]
+                },
+                "allowable_stress_structural_joints": {
+                    title: "Allowable Stress for Structural Joints (Riveted)",
+                    description: "Recommended values of allowable tensile stress of plate, shear stress of rivet, and crushing stress of rivet for shop and field assembly.",
+                    references: [
+                        { type: "Chapter", name: "5 Riveted Joints", pages: "79-100" },
+                        { type: "Table", title: "Table 5.5 Recommended Values of Allowable Stress for Structural Joints", page: "100" }
+                    ]
+                },
+                "working_stress_elevated_temp_rivets": {
+                    title: "Working Stress at Elevated Temperatures (Rivets)",
+                    description: "This concept is generally present in material property sections for pressure vessels. While not a direct table/equation in the provided Riveted Joints snippets, general material strength tables for elevated temperatures would apply.",
+                    references: [
+                        { type: "Note", description: "Specific table for riveted joints at elevated temperatures not in provided snippets. Refer to general material property tables at elevated temperatures (e.g., from Chapter 7 or 8 appendices if available in the full handbook) or Chapter 2 (Working Stresses) for general temperature effects on strength." }
+                    ]
+                },
+
+                // VI. Welded Joints
+                "types_welded_joints": {
+                    title: "Types of Welded Joints",
+                    description: "Description of common weld types such as butt welds (V-groove), lap welds, and fillet welds (transverse, parallel, T-joint).",
+                    references: [
+                        { type: "Chapter", name: "6 Welded Joints", pages: "89-98" },
+                        { type: "General", description: "Butt and Lap weld joints", page: "89" }
+                        // Specific figures illustrating types not in provided snippets, but common in such chapters.
+                    ]
+                },
+                "stresses_in_welds": {
+                    title: "Stresses in Welds",
+                    description: "Formulas for normal and shear stresses in butt and fillet weld joints under various loading conditions (tension, compression, shear, bending, torsion).",
+                    references: [
+                        { type: "Chapter", name: "6 Welded Joints", pages: "89-98" },
+                        { type: "Equation", number: "6.1(a)-(e)", description: "Butt Welded Joints (Tensile, Compressive, Shear stress, Strength)", page: "90" },
+                        { type: "Equation", number: "6.2(a)-(b)", description: "Parallel Fillet Welded Joints (Shear stress, Strength)", page: "91" },
+                        { type: "Equation", number: "6.3(a)-(b)", description: "Transverse Fillet Welded Joints (Tensile stress, Strength)", page: "91" },
+                        { type: "Equation", number: "6.4(a)-(f)", description: "Combined stress (Fillet welds with bending, torsion)", page: "92" }
+                    ]
+                },
+                "eccentric_loads_welded": {
+                    title: "Eccentric Loads (Welded)",
+                    description: "Calculating primary and maximum secondary shear stress, and resultant shear stress for eccentrically loaded welded joints.",
+                    references: [
+                        { type: "Chapter", name: "6 Welded Joints", pages: "89-98" },
+                        { type: "Equation", number: "6.6", description: "Eccentric Load on Welded Joints (Resultant shear stress)", page: "94" }
+                    ]
+                },
+                "properties_weld_metal": {
+                    title: "Properties of Deposited Weld Metal",
+                    description: "Mechanical properties of deposited weld metal (e.g., yield point, ultimate strength, endurance strength, elongation) for bare and coated electrodes.",
+                    references: [
+                        { type: "Note", description: "Specific tables for weld metal properties not included in provided snippets. Refer to general material property tables in the handbook, or specialized welding standards." }
+                    ]
+                },
+                "stress_concentration_welds": {
+                    title: "Stress Concentration Factors (Welds)",
+                    description: "Values for stress concentration factors for various weld geometries like reinforced butt weld, toe of transverse fillet weld, T-butt joint, and end of longitudinal fillet weld.",
+                    references: [
+                        { type: "Note", description: "Specific tables/figures for stress concentration factors in welds not included in provided snippets. Refer to Chapter 2 (Working Stresses) for general stress concentration principles and other specialized welding design resources." }
+                    ]
+                },
+                "recommended_design_stresses_welds": {
+                    title: "Recommended Design Stresses (Welds)",
+                    description: "Recommended design stresses for welds made with mild steel electrodes under steady and reversed loads (e.g., based on AWS and C.W. Jennings recommendations).",
+                    references: [
+                        { type: "Note", description: "Specific tables for recommended design stresses for welds not included in provided snippets. Refer to relevant welding codes and standards (e.g., AWS D1.1 for structural steel welding)." }
+                    ]
+                },
+                "strength_shield_arc_welds": {
+                    title: "Strength of Shield Arc Steel Welds",
+                    description: "Recommended stress values for different types of joints under repeated loads for shield arc steel welds.",
+                    references: [
+                        { type: "Note", description: "Specific tables for strength of shield arc welds not included in provided snippets. Refer to welding codes and standards for fatigue strength of welds." }
+                    ]
+                },
+                "allowable_loads_welds": {
+                    title: "Allowable Loads on Mild Steel Fillet/Butt Welds",
+                    description: "Tables showing allowable loads on mild steel fillet welds and butt welds for bare electrode and shield arc processes.",
+                    references: [
+                        { type: "Note", description: "Specific tables for allowable loads on welds not included in provided snippets. Refer to welding codes and standards." }
+                    ]
+                },
+                "section_modulus_polar_inertia_welds": {
+                    title: "Section Modulus & Polar Moment of Inertia (Welds)",
+                    description: "Formulas for section modulus in bending (Z) and polar moment of inertia in torsion (J) for typical fillet welded connections with different geometries.",
+                    references: [
+                        { type: "Note", description: "Specific formulas/tables for weld section modulus/polar inertia not included in provided snippets. These would typically be derived from basic geometric properties (e.g., Table 1.3 (a), (b)) applied to weld throat area." }
+                    ]
+                },
+
+                // VII. Cylinders, Pipes and Tubes
+                "thin_cylinders": {
+                    title: "Thin Cylinders",
+                    description: "Formulas for circumferential/tangential stress (hoop stress), longitudinal stress, and stress when seam or joint is present, considering the effect of joint efficiency.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Circumferential and longitudinal stresses", page: "99" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "long_thin_tubes_internal_pressure": {
+                    title: "Long Thin Tubes with Internal Pressure",
+                    description: "Permissible pressure calculations for seamless and welded tubes, often according to ASME Boiler Code.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "ASME Boiler Code", page: "99" }
+                        // Specific equations/tables not in provided snippets.
+                    ]
+                },
+                "engine_press_cylinders": {
+                    title: "Engine and Press Cylinders",
+                    description: "Guidance and calculations for cylinder wall thickness.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Engine and press cylinders", page: "99" }
+                        // Specific equations/tables not in provided snippets.
+                    ]
+                },
+                "openings_cylindrical_drums": {
+                    title: "Openings in Cylindrical Drums",
+                    description: "Information on permissible diameter of openings and minimum diameter for unreinforced holes in cylindrical drums.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Openings in cylindrical drums", page: "99" }
+                        // Specific equations/tables not in provided snippets.
+                    ]
+                },
+                "thin_tubes_external_pressure": {
+                    title: "Thin Tubes with External Pressure",
+                    description: "Formulas for collapsing pressure for seamless and lap-welded tubes (e.g., Carman's formula, Fairbairn formula).",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Prof. A.P. Carman's formula", page: "99" },
+                        { type: "General", description: "Sir William Fairbairn formula for collapsing pressure", page: "99" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "critical_pressure_large_cylinder": {
+                    title: "Critical Pressure for Large Cylinder",
+                    description: "Calculations for critical pressure involving maximum distance between supports and modulus of elasticity.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "moment_inertia_stiffening_ring": {
+                    title: "Moment of Inertia of Stiffening Ring",
+                    description: "Calculation of moment of inertia for stiffening rings used in cylinders under external pressure.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "thick_cylinders_lames": {
+                    title: "Thick Cylinders (Lame's Equations)",
+                    description: "Formulas using Lame's equations to determine tangential and radial stress at any radius, maximum tangential and radial stress at inner surface, and maximum shear stress in thick cylinders.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Lame's equations", page: "99" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "cylinder_wall_thickness_materials": {
+                    title: "Cylinder Wall Thickness (Brittle/Ductile Materials)",
+                    description: "Formulas for cylinder wall thickness based on maximum normal and shear stress theories, distinguishing between brittle and ductile materials.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "clavarino_birnie_equations": {
+                    title: "Clavarino's and Birnie's Equations",
+                    description: "Equations used for tangential and radial stress, and cylinder wall thickness for closed (Clavarino's) and open (Birnie's) cylinders.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Clavarino's equations for closed cylinders", page: "99" },
+                        { type: "General", description: "Birnie's equations for open cylinders", page: "99" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "barlows_equations": {
+                    title: "Barlow's Equations",
+                    description: "Equations for calculating tangential stress in high pressure oil and gas pipes.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Barlow's equations", page: "99" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "changes_cylinder_diameter": {
+                    title: "Changes in Cylinder Diameter Due to Pressure",
+                    description: "Formulas for calculating the increase and decrease in internal and external diameter of cylinders due to internal pressure.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "compound_cylinders": {
+                    title: "Compound Cylinders",
+                    description: "Analysis of tangential and radial stress at any radius in compound cylinders (e.g., using Birnie's equation for individual cylinders).",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Compound cylinders", page: "99" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "press_shrink_fits": {
+                    title: "Press and Shrink Fits",
+                    description: "Detailed calculations for tangential stress at inner/outer surfaces of inner/outer cylinders, radial pressure between cylinders, and forces resulting from interference fits.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" },
+                        { type: "General", description: "Press and shrink fits", page: "99" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "forces_interference_fits": {
+                    title: "Forces Resulting in Interference Fits",
+                    description: "Calculation of total axial force and torque transmitted due to interference fits.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "stress_force_shrink_fits": {
+                    title: "Stress Due to Force and Shrink Fits",
+                    description: "Formulas for maximum shrinkage stress and the temperature required for shrinking processes.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "allowable_stress_cylinders_pipes": {
+                    title: "Allowable Stress Values (Cylinders/Pipes)",
+                    description: "Tables for allowable stress values for carbon and low alloy steel plates, tubes, and pipes at various design temperatures.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" }
+                        // Specific tables not in provided snippets.
+                    ]
+                },
+                "values_e_cylinders_pipes": {
+                    title: "Values of E (Cylinders/Pipes)",
+                    description: "Tables for Modulus of Elasticity (E) for ferrous materials, aluminum and its alloys, copper and its alloys, and nickel and nickel alloys at various design temperatures.",
+                    references: [
+                        { type: "Chapter", name: "7 Cylinders, Pipes and Tubes", pages: "99-" }
+                        // Specific tables not in provided snippets.
+                    ]
+                },
+
+                // VIII. Shells, Flat Plates and Cylinder Heads
+                "shells_internal_pressure": {
+                    title: "Shells Subjected to Internal Pressure",
+                    description: "Formulas for minimum thickness of cylindrical and spherical shells for unfired pressure vessels, including stress equivalent to membrane stress (Huber-Hencky equation).",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" },
+                        { type: "General", description: "Shells subjected to internal pressure", page: "109" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "shells_external_pressure": {
+                    title: "Shells Subjected to External Pressure",
+                    description: "Thickness calculation for cylindrical shells under external pressure, considering factors for length and diameter.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" },
+                        { type: "General", description: "Shells subjected to external pressure", page: "109" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "unstayed_flat_heads_covers": {
+                    title: "Unstayed Flat Heads and Covers",
+                    description: "Thickness formulas for circular and non-circular flat heads, and spherically dished covers.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" },
+                        { type: "General", description: "Unstayed flat heads and covers", page: "109" },
+                        { type: "General", description: "spherically dished covers", page: "109" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "stayed_braced_plates": {
+                    title: "Stayed and Braced Plates",
+                    description: "Thickness calculation for circular plates (uniformly and centrally loaded), rectangular, and elliptical plates that are stayed and braced, including factors for diameter and support points.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" },
+                        { type: "General", description: "Stayed and braced plates", page: "109" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "circular_plate_uniformly_loaded": {
+                    title: "Circular Plate Uniformly Loaded",
+                    description: "Formulas for thickness and maximum deflection of circular plates under uniform loading.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "circular_plate_centrally_loaded": {
+                    title: "Circular Plate Loaded Centrally",
+                    description: "Formulas for thickness and deflection of circular plates under concentrated central loading.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "grashofs_formula": {
+                    title: "Grashof's Formula for Thickness of a Plate",
+                    description: "Specific formula for rigidly fixed plates under uniform loading (likely for circular plates).",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific equation not in provided snippets.
+                    ]
+                },
+                "rectangular_plates": {
+                    title: "Rectangular Plates",
+                    description: "Thickness formulas for rectangular plates under uniform load and concentrated load.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "elliptical_plates": {
+                    title: "Elliptical Plates",
+                    description: "Thickness formula for uniformly loaded elliptical plates.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "values_d_c_flat_heads": {
+                    title: "Values of 'D' and 'C' for Typical Unstayed Flat Heads",
+                    description: "Coefficients used in thickness calculations for different unstayed flat head types (flanged, brazed, welded).",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific table not in provided snippets.
+                    ]
+                },
+                "pressure_vessel_classification": {
+                    title: "Classification of Pressure Vessels and Weld Joint Efficiency Factor (J)",
+                    description: "Table categorizing pressure vessel weld joints by penetration, backing strips, etc., and their corresponding efficiency factors.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific table not in provided snippets.
+                    ]
+                },
+                "allowable_stress_shells_plates": {
+                    title: "Allowable Stress Values (Shells/Plates)",
+                    description: "Tables for allowable stress values for carbon and low alloy steel plates at various design temperatures.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific table not in provided snippets.
+                    ]
+                },
+                "values_e_shells_plates": {
+                    title: "Values of E (Shells/Plates)",
+                    description: "Tables for Modulus of Elasticity (E) for various materials at different design temperatures, relevant for shells and plates.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific table not in provided snippets.
+                    ]
+                },
+                "coefficients_c_plates": {
+                    title: "Coefficients c1, c2, c3, c4, c5 for Plates",
+                    description: "Coefficients used in plate deflection and stress formulas for circular, rectangular, and elliptical plates with different support methods.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific table not in provided snippets.
+                    ]
+                },
+                "max_allowable_stresses_stays": {
+                    title: "Maximum Allowable Stresses in Stays and Stay Bolts",
+                    description: "Values for maximum permissible stress in unwelded, hollow steel, welded, and D-steel stays.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific table not in provided snippets.
+                    ]
+                },
+                "max_stresses_deflection_flat_plates": {
+                    title: "Maximum Stresses and Deflection in Flat Plates",
+                    description: "Comprehensive table with formulas for various loading and support conditions for flat plates.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific table not in provided snippets.
+                    ]
+                },
+                "plates_different_loads": {
+                    title: "Plates Subjected to Different Types of Loads",
+                    description: "Illustrations of shear, compression, lateral buckling, and bending on plates.",
+                    references: [
+                        { type: "Chapter", name: "8 Shells, Flat Plates and Cylinder Heads", pages: "109-" }
+                        // Specific figures not in provided snippets.
+                    ]
+                },
+
+                // IX. Threaded Fasteners and Power Screws
+                "set_screws": {
+                    title: "Set Screws",
+                    description: "Empirical formulas for proper size and maximum safe holding force of set screws.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" },
+                        { type: "General", description: "Set screws", page: "127" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "bolts_threaded": {
+                    title: "Bolts (Threaded Fasteners)",
+                    description: "Concepts for initial tension load, and relation between torque applied and axial tension load for bolts.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" },
+                        { type: "General", description: "Effect of applied loads on bolt", page: "127" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "stresses_tension_bolts": {
+                    title: "Stresses in Tension Bolts",
+                    description: "Formulas for working stress for different carbon steel and alloy steel bolts under tension.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" },
+                        { type: "General", description: "Stresses in tension bolts", page: "127" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "allowable_stress_fluid_tight_joints": {
+                    title: "Allowable Stress for Fluid Tight Joints",
+                    description: "Allowable stress values for rough and faced fluid-tight joints.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific tables/data not in provided snippets.
+                    ]
+                },
+                "unstressed_bolt": {
+                    title: "Unstressed Bolt",
+                    description: "Root diameter considerations for lifting eye bolts and crane hooks.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "joint_axial_load_tightening": {
+                    title: "Joint with Axial Load with Subsequent Tightening",
+                    description: "Root diameter calculations for joints under axial load with subsequent tightening.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "number_of_bolts": {
+                    title: "Number of Bolts",
+                    description: "Empirical rules for determining the number of bolts in pipe joints, steam engine cylinders, and for studs.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific rules/tables not in provided snippets.
+                    ]
+                },
+                "eccentric_loading_rectangular_base": {
+                    title: "Eccentric Loading on Rectangular Base (Bolts)",
+                    description: "Calculations for shear load, secondary tensile force, and equivalent tensile and shear load for bolts on a rectangular base under eccentric loading.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "eccentric_loading_circular_base": {
+                    title: "Eccentric Loading on Circular Base (Bolts)",
+                    description: "Calculations for shear load, secondary tensile force, and maximum tensile and shear force for bolts on a circular base under eccentric loading.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "eccentric_loading_rectangular_plates": {
+                    title: "Eccentric Loading on Rectangular Plates (Bolts)",
+                    description: "Calculations for direct/primary shear stress, torsional moment, secondary shear force, maximum secondary shear stress, and resultant shear force for bolts connecting rectangular plates under eccentric loading.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "efficiency_triangular_threads": {
+                    title: "Efficiency of Triangular Threads",
+                    description: "Relations between applied torque and resisting load, and efficiency formulas including lead angle and helix angle.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "tangential_force_v_thread": {
+                    title: "Tangential Force for V-Thread",
+                    description: "Calculations for tangential force at mean radius, with and without friction, for V-threads.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "efficiency_v_thread": {
+                    title: "Efficiency of V-Thread",
+                    description: "Formulas for efficiency of V-threads, considering friction.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "power_screws_square_threads": {
+                    title: "Power Screws (Square Threads)",
+                    description: "Calculations for tangential force at mean radius, frictional torque, and efficiency for square threads.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "efficiency_formula_square_thread": {
+                    title: "Efficiency Formula for Square Thread",
+                    description: "Formula for efficiency of square threads, considering collar friction.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific equation not in provided snippets.
+                    ]
+                },
+                "number_threads_length_nut": {
+                    title: "Number of Threads and Length of Nut",
+                    description: "Considerations for determining the number of threads and length of nut in square threaded nuts.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific guidelines not in provided snippets.
+                    ]
+                },
+                "basic_iso_metric_threads": {
+                    title: "Basic Dimensions of ISO Metric Screw Threads",
+                    description: "Tables for coarse and fine pitch series, including major, minor, pitch diameters, lead, angle, and area of core.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific tables not in provided snippets.
+                    ]
+                },
+                "basic_dimensions_square_threads": {
+                    title: "Basic Dimensions for Square Threads",
+                    description: "Tables for fine and normal series of square threads.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific tables not in provided snippets.
+                    ]
+                },
+                "limits_sizes_threads": {
+                    title: "Limits of Sizes for Fine and Coarse Series Nut/Bolt Threads",
+                    description: "Tolerance classes for various metric sizes of nut and bolt threads.",
+                    references: [
+                        { type: "Chapter", name: "9 Threaded Fasteners and Power Screws", pages: "127-158" }
+                        // Specific tables not in provided snippets.
+                    ]
+                },
+
+                // X. Curved Beams
+                "stress_analysis_curved_beams": {
+                    title: "Stress Analysis in Curved Beams",
+                    description: "General equation for stress at any fiber, and calculations for maximum tensile and compressive stress at inner and outer fibers.",
+                    references: [
+                        { type: "Chapter", name: "10 Curved Beams", pages: "159-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "chain_links": {
+                    title: "Chain Links",
+                    description: "Bending moment calculations for chain links.",
+                    references: [
+                        { type: "Chapter", name: "10 Curved Beams", pages: "159-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "closed_rings": {
+                    title: "Closed Rings",
+                    description: "Bending moment and maximum stress calculations for circular rings under tension and compression.",
+                    references: [
+                        { type: "Chapter", name: "10 Curved Beams", pages: "159-" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "formulas_curved_beams": {
+                    title: "Formulas for Curved Beams",
+                    description: "Precise and approximate formulas for calculating coefficients (e, k_i, k_o) for various cross-sections (e.g., solid rectangular, solid circular, hollow circular, T-beam, I-beam).",
+                    references: [
+                        { type: "Chapter", name: "10 Curved Beams", pages: "159-" }
+                        // Specific formulas/tables not in provided snippets.
+                    ]
+                },
+                "effect_curvature_bending_stresses": {
+                    title: "Effect of Curvature on Bending Stresses",
+                    description: "Graphical representation of curvature factors for inner and outer fibers, showing how curvature influences stress distribution.",
+                    references: [
+                        { type: "Chapter", name: "10 Curved Beams", pages: "159-" }
+                        // Specific figures not in provided snippets.
+                    ]
+                },
+
+                // XI. Springs
+                "types_of_springs": {
+                    title: "Types of Springs",
+                    description: "Overview of various spring types including cylindrical compression, concentric, conical, torsion, disc, helical, leaf, and rubber springs.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" },
+                        { type: "General", description: "Cylindrical compression springs, Concentric springs, Torsional springs, Leaf springs", page: "167" }
+                    ]
+                },
+                "cylindrical_compression_springs": {
+                    title: "Cylindrical Compression Springs (Round Section)",
+                    description: "Equations for torsional moment, internal resisting moment, shear stress, wire diameter, Wahl stress correction factor, stress correction factor (Bergstroesser), angular deflection, axial deflection, load, number of active coils, spring rate, resilience, volume, and wire diameter for static and cyclic loads.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" },
+                        { type: "Equation", number: "11.1(a), (b)", description: "Torsional stress in round wire helical spring", page: "168" },
+                        { type: "Equation", number: "11.2(a), (b)", description: "Wahl factor", page: "168" },
+                        { type: "Equation", number: "11.3(a), (b)", description: "Deflection of helical spring", page: "169" },
+                        { type: "Equation", number: "11.4", description: "Number of active coils (N_a)", page: "169" },
+                        { type: "Equation", number: "11.5", description: "Spring rate (k)", page: "170" },
+                        { type: "Equation", number: "11.6", description: "Resilience of helical springs", page: "170" },
+                        { type: "Table", title: "Table 11.1 Standard wire diameters for compression and tension springs", page: "192" },
+                        { type: "Table", title: "Table 11.2 Standard spring index C for compression springs", page: "192" },
+                        // Specific stress correction factor (Bergstroesser) not explicitly in provided snippets.
+                    ]
+                },
+                "rectangular_section_springs": {
+                    title: "Rectangular Section Springs",
+                    description: "Equations for shear stress and axial deflection for rectangular section springs.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "repeated_loading_springs": {
+                    title: "Repeated Loading (Springs)",
+                    description: "General equation for equivalent static load, and design stress for static and completely reversed loads in springs under repeated loading.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "minimum_free_length_spring": {
+                    title: "Minimum Free Length of Spring",
+                    description: "Formulas for minimum free length of springs based on grinding conditions and end types.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "resistance_to_buckling_springs": {
+                    title: "Resistance to Buckling (Springs)",
+                    description: "Calculations for critical axial load, relative deflection, degree of slenderness, and buckling factor for compression springs.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" },
+                        { type: "Figure", number: "Buckling Factor for Helical Compression Springs (Graphical)", page: "198" } // Assuming this exists in the full handbook
+                    ]
+                },
+                "concentric_compression_springs": {
+                    title: "Concentric Compression Springs",
+                    description: "Formulas for relative deflection and load distribution on inner and outer springs in concentric spring arrangements.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "permissible_shear_stress_spring_graph": {
+                    title: "Permissible Shear Stress (Springs - Graphical)",
+                    description: "Graphical data for permissible shear stress for various steel types and grades used in compression springs.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" },
+                        { type: "Note", description: "Specific graph data not included in provided snippets. Refer to relevant figures/tables in Chapter 11." }
+                    ]
+                },
+                "vibration_cylindrical_springs": {
+                    title: "Vibration of Cylindrical Springs",
+                    description: "Equations for natural period of vibration and natural frequency of cylindrical springs.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" },
+                        { type: "Equation", number: "11.13(a), (b)", description: "Natural frequency of helical springs", page: "173" }
+                    ]
+                },
+                "conical_springs": {
+                    title: "Conical Springs",
+                    description: "Formulas for axial deflection for conical springs made from round and rectangular stock.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "torsion_springs": {
+                    title: "Torsion Springs",
+                    description: "Equations for maximum stress in torsion and deflection for torsion springs made from round and rectangular wire.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "leaf_springs": {
+                    title: "Leaf Springs (Flat and Multi-Leaf)",
+                    description: "Formulas for maximum stress, maximum deflection, and thickness of spring plate for flat and multi-leaf springs.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "laminated_springs": {
+                    title: "Laminated Cantilever and Semi-Elliptic Springs",
+                    description: "Equations for stress, deflection, initial gap, load on clip bolts, and maximum stress for laminated cantilever and semi-elliptic springs.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "disc_springs": {
+                    title: "Disc Springs or Belleville Springs",
+                    description: "Equations for relation between load and axial deflection, maximum stress at inner and outer edges, and moment calculations for disc springs.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "rubber_springs": {
+                    title: "Rubber Springs",
+                    description: "Formulas for percentage deformation, modulus of elasticity, deflection, and angular/linear/radial deformation for rubber springs in compression, shear, and torsion.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" }
+                        // Specific equations not in provided snippets.
+                    ]
+                },
+                "stress_factors_helical_springs": {
+                    title: "Stress Factors for Helical Springs (Graphical)",
+                    description: "Graphical data for stress factors (e.g., Wahl factor related graphs) for various spring index values.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" },
+                        { type: "Note", description: "Specific graph data not included in provided snippets. Refer to relevant figures in Chapter 11 (e.g., Figures 11.1, 11.2, 11.3 for various stress factors)." }
+                    ]
+                },
+                "buckling_factor_helical_springs": {
+                    title: "Buckling Factor for Helical Compression Springs (Graphical)",
+                    description: "Graphical data for buckling factor for helical compression springs based on different end conditions.",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" },
+                        { type: "Note", description: "Specific graph data not included in provided snippets. Refer to relevant figures in Chapter 11." }
+                    ]
+                },
+                "fatigue_strength_diagram_springs": {
+                    title: "Fatigue Strength Diagram for Cold Coiled Compression Springs",
+                    description: "Fatigue strength diagrams (e.g., for oil hardened and tempered valve spring wire, both peened and shot peened).",
+                    references: [
+                        { type: "Chapter", name: "11 Springs", pages: "167-200" },
+                        { type: "Note", description: "Specific graph data not included in provided snippets. Refer to relevant figures in Chapter 11." }
+                    ]
+                },
+
+                // General Appendix References (from Study Guide)
+                "materials_properties": {
+                    title: "Material Properties (General)",
+                    description: "General designation and properties of materials including carbon steel, iron, grey cast iron, mechanical properties and uses of carbon and alloy steels, chemical composition. Refer to Appendix I.",
+                    references: [
+                        { type: "Chapter", name: "Appendix I Designation and properties of Materials", pages: "453-475" },
+                        { type: "Table", title: "Table 1.1 Physical constants of some common materials", page: "26" },
+                        { type: "Table", title: "Table 3.3 Properties of Shafting Materials", page: "71" },
+                        { type: "Table", title: "Table 2.5 Strength Ratios for Various Materials", page: "33" }
+                    ]
+                },
+                "stress_concentration": {
+                    title: "Stress Concentration (General)",
+                    description: "General concepts and graphical data for stress concentration factors (K_t) for various geometric discontinuities (holes, notches, fillets, stepped shafts, transverse holes, curved bars). Refer to Chapter 2.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "General", description: "Stress concentration-Direct, Bending and Torsional stresses, notch sensitivity index.", page: "19" },
+                        { type: "Table", title: "Table 2.1 Stress Concentration Factors", page: "30-31" },
+                        // More specific figures from Chapter 2, pages 51-61 are covered in 'stress_concentration_factors_tables'
+                    ]
+                },
+                "fatigue_failure": {
+                    title: "Fatigue Failure Equations (General)",
+                    description: "General equations for fatigue failure including Gerber's, Goodman's, and Soderberg's relations, and related diagrams. Refer to Chapter 2.",
+                    references: [
+                        { type: "Chapter", name: "2 Working Stresses", pages: "19-48" },
+                        { type: "Equation", number: "2.19(a)-(e)", description: "Fatigue Failure Equations (Gerber, Goodman, Soderberg)", page: "24-25" },
+                        { type: "Figure", number: "2.6", description: "Fatigue Failure Equations (Gerber, Goodman, Soderberg diagrams)", page: "39" },
+                        { type: "Figure", number: "Modified Goodman Diagram", description: "Modified Goodman Diagram", page: "47" }
+                    ]
+                }
+            };
+
+            locateInfoButton.addEventListener("click", () => {
+                const selectedConcept = searchConceptSelector.value;
+                if (!selectedConcept) {
+                    locatorOutput.innerHTML = '<p style="color: #d9534f; font-weight: bold;">Please select a concept or term from the dropdown.</p>';
+                    return;
+                }
+
+                const conceptData = studyGuideHandbookMap[selectedConcept];
+                if (!conceptData) {
+                    locatorOutput.innerHTML = `<p style="color: #d9534f; font-weight: bold;">Information not available for "${searchConceptSelector.options[searchConceptSelector.selectedIndex].text}".</p>`;
+                    return;
+                }
+
+                let htmlOutput = `<h3>${conceptData.title}</h3>`;
+                htmlOutput += `<p><strong>Description:</strong> ${conceptData.description}</p>`;
+                htmlOutput += `<h4>Handbook References:</h4><ul>`;
+
+                conceptData.references.forEach(ref => {
+                    let refDetail = '';
+                    if (ref.type === "Chapter") {
+                        refDetail = `<strong>Chapter:</strong> ${ref.name} (Pages: ${ref.pages})`;
+                    } else if (ref.type === "Table") {
+                        refDetail = `<strong>Table:</strong> ${ref.title} (Page: ${ref.page})`;
+                    } else if (ref.type === "Equation") {
+                        refDetail = `<strong>Equation(s):</strong> ${ref.number}: ${ref.description} (Page: ${ref.page})`;
+                    } else if (ref.type === "Figure") {
+                        refDetail = `<strong>Figure:</strong> ${ref.number}: ${ref.description} (Page: ${ref.page})`;
+                    } else if (ref.type === "Topic") {
+                        refDetail = `<strong>Topic:</strong> ${ref.description} (Page: ${ref.page})`;
+                    } else if (ref.type === "General") { // Added 'General' type for broader references
+                        refDetail = `<strong>General Reference:</strong> ${ref.description} (Page: ${ref.page})`;
+                    } else if (ref.type === "Note") {
+                        refDetail = `<strong>Note:</strong> ${ref.description}`;
+                    }
+                    htmlOutput += `<li>${refDetail}</li>`;
+                });
+                htmlOutput += `</ul>`;
+                locatorOutput.innerHTML = htmlOutput;
+            });
+        });
+    </script>
+</body>
+</html>
