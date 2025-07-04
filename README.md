@@ -1,6 +1,6 @@
 Mechanical Engineering Design Handbook Locator
 
-Project Description
+Project Description:
 An interactive web tool developed solely for educational purposes to quickly locate specific concepts, formulas, and tables within the "Design Data Handbook for Mechanical Engineers in SI and Metric Units" by K. Mahadevan and K. Balaveera Reddy. This project is for only educational purpose.
 
 Features
@@ -12,7 +12,7 @@ Detailed Information: Each lookup provides a brief description of the concept al
 
 Responsive Design: Built with Tailwind CSS for a clean, modern, and adaptive layout across various devices.
 
-How to Use
+How to Use:
 Open the Datahand book locator.html file in your web browser.
 
 Select a concept, component, or term from the dropdown menu.
@@ -21,7 +21,7 @@ Click the "Locate Information in Handbook" button.
 
 The relevant handbook references, including chapter names, page numbers, and descriptions, will be displayed below.
 
-Credits and Disclaimer
+Credits and Disclaimer:
 The data and references provided by this tool are derived from:
 
 Handbook Title: "Design Data Handbook for Mechanical Engineers in SI and Metric Units"
