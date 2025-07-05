@@ -13,7 +13,7 @@ Detailed Information: Each lookup provides a brief description of the concept al
 Responsive Design: Built with Tailwind CSS for a clean, modern, and adaptive layout across various devices.
 
 How to Use:
-Open the Datahand book locator.html file in your web browser.
+Open the Index.html file in your web browser.
 
 Select a concept, component, or term from the dropdown menu.
 
